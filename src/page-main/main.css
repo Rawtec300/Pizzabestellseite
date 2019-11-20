@@ -1,9 +1,20 @@
-figure{
+h1 {
+    text-align: center;
+    background-color: limegreen;
+}
+
+h2 {
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+
+figure {
     float: left;
 }
 
-.pizzamenue figure { 
-	object-fit: cover; 
-	width: 100%; 
-	height: 100%;
+.pizzamenue figure {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
