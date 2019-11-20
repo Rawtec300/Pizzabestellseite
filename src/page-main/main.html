@@ -4,12 +4,14 @@
 <head>
     <title>PizzaUp</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
     <main>
         <h1 id="seitenanfang">PizzaUp</h1>
         <h2>Keine Lust zu kochen? Kein Problem, bestell dir einfach eine Premium-Pizza von PizzaUp!</h2>
+        <!--Menü wird in Tabellenform angezeigt-->
         <table>
             <!--Erste Zeile-->
             <tr>
@@ -207,28 +209,78 @@
         </table>
         <fieldset>
             <form id="eingabeformular">
-                <h2>Geben Sie bitte Ihre Persönlichen Daten ein, damit wir an Sie liefern können:</h2>
-                <label for="lname">Name:&emsp;&emsp;</label>
-                <input type="text" id="lname" placeholder="Nachname" required><br><br>
-                <label for="lvorname">Vorname:&emsp;</label>
-                <input type="text" id="lvorname" placeholder="Vorname" required><br><br>
-                <label for="ltelefon">Telefon:&emsp;&ensp;</label>
-                <input type="tel" id="ltelefon" placeholder="Telefonnummer"><br><br>
-                <label for="lemail">Email:&emsp;&emsp;</label>
-                <input type="email" id="lemail" placeholder="Email" required><br><br>
-                <label for="lpasswort">Passwort:&emsp;</label>
-                <input type="password" id="lpasswort" placeholder="Passwort" required>
-                <label for="lpasswortwiederholen">&emsp;passwort wiederholen:&emsp;</label>
-                <input type="password" id="lpasswortwiederholen" placeholder="Passwort Wiederholen" required><br><br>
-                <label for="lstrasse">Straße:&emsp;&emsp;</label>
-                <input type="text" id="lstrasse" placeholder="Adresse, Hausnummer" required><br><br>
-                <label for="lstadt">Stadt:&emsp;&emsp;</label>
-                <input type="text" id="lstadt" placeholder="PLZ, Stadt" required><br><br>
+                <table>
+                    <h2>Geben Sie bitte Ihre Persönlichen Daten ein, damit wir an Sie liefern können:</h2>
+                    <tr>
+                        <td>
+                            <label for="lname">Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="lname" placeholder="Nachname" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="lvorname">Vorname:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="lvorname" placeholder="Vorname" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="ltelefon">Telefon:</label>
+                        </td>
+                        <td>
+                            <input type="tel" id="ltelefon" placeholder="Telefonnummer">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="lemail">Email:</label>
+                        </td>
+                        <td>
+                            <input type="email" id="lemail" placeholder="Email" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="lpasswort">Passwort:</label>
+                        </td>
+                        <td>
+                            <input type="password" id="lpasswort" placeholder="Passwort" required>
+                        </td>
+                        <td>
+                            <label for="lpasswortwiederholen">passwort wiederholen:</label>
+                        </td>
+                        <td>
+                            <input type="password" id="lpasswortwiederholen" placeholder="Passwort Wiederholen"
+                                required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="lstrasse">Straße:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="lstrasse" placeholder="Adresse, Hausnummer" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="lstadt">Stadt:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="lstadt" placeholder="PLZ, Stadt" required>
+                        </td>
+                    </tr>
+                </table>
                 Wie möchten Sie zahlen:<br><br>
                 <input type="radio" name="zahlungsart" value="Bar" checked>Bar
                 <input type="radio" name="zahlungsart" value="Kreditkarte">Kreditkarte
                 <input type="radio" name="zahlungsart" value="Paypal">Paypal<br><br>
-                <input type="checkbox" name="Einwilligungserklärung" required>Ich habe die Datenschutzerklärung gelesen und
+                <input type="checkbox" name="Einwilligungserklärung" required>Ich habe die Datenschutzerklärung gelesen
+                und
                 akzeptiert.<br><br>
                 <input type="submit" value="Absenden">
             </form>
