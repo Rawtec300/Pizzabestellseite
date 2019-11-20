@@ -12,7 +12,7 @@
         <h1 id="seitenanfang">PizzaUp</h1>
         <h2>Keine Lust zu kochen? Kein Problem, bestell dir einfach eine Premium-Pizza von PizzaUp!</h2>
         <!--Menü wird in Tabellenform angezeigt-->
-        <form form method="get" action="#eingabeformular">
+        <form method="get" action="#eingabeformular">
             <table>
                 <!--Erste Zeile-->
                 <tr>
@@ -194,18 +194,18 @@
                         </figure>
                     </td>
                 </tr>
+            </table>
         </form>
-        </table>
         <!--Eingabeformular-->
         <fieldset>
+            <h2>Geben Sie bitte Ihre Persönlichen Daten ein, damit wir an Sie liefern können:</h2>
             <form id="eingabeformular">
                 <table>
-                    <h2>Geben Sie bitte Ihre Persönlichen Daten ein, damit wir an Sie liefern können:</h2>
                     <tr>
                         <td>
                             <label for="lname">Name:</label>
                         </td>
-                        <td>
+                        <td colspan="3">
                             <input type="text" id="lname" placeholder="Nachname" required>
                         </td>
                     </tr>
@@ -213,7 +213,7 @@
                         <td>
                             <label for="lvorname">Vorname:</label>
                         </td>
-                        <td>
+                        <td colspan="3">
                             <input type="text" id="lvorname" placeholder="Vorname" required>
                         </td>
                     </tr>
@@ -221,7 +221,7 @@
                         <td>
                             <label for="ltelefon">Telefon:</label>
                         </td>
-                        <td>
+                        <td colspan="3">
                             <input type="tel" id="ltelefon" placeholder="Telefonnummer">
                         </td>
                     </tr>
@@ -229,7 +229,7 @@
                         <td>
                             <label for="lemail">Email:</label>
                         </td>
-                        <td>
+                        <td colspan="3">
                             <input type="email" id="lemail" placeholder="Email" required>
                         </td>
                     </tr>
@@ -252,7 +252,7 @@
                         <td>
                             <label for="lstrasse">Straße:</label>
                         </td>
-                        <td>
+                        <td colspan="3">
                             <input type="text" id="lstrasse" placeholder="Adresse, Hausnummer" required>
                         </td>
                     </tr>
@@ -260,7 +260,7 @@
                         <td>
                             <label for="lstadt">Stadt:</label>
                         </td>
-                        <td>
+                        <td colspan="3">
                             <input type="text" id="lstadt" placeholder="PLZ, Stadt" required>
                         </td>
                     </tr>
