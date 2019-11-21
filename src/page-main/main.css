@@ -12,6 +12,10 @@ h2 {
     text-decoration-line: underline;
 }
 
-div#pizzabestellobjekt{
+div.pizzabestellobjekt{
     float: left;
+}
+
+fieldset.eingabeformular{
+    clear: both;
 }
