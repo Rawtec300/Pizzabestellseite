@@ -1,5 +1,6 @@
 body {
     color: white;
+    font-family: 'PT Sans', sans-serif;
 }
 
 h1 {
@@ -11,6 +12,10 @@ h2 {
     text-align: center;
     text-decoration-line: underline;
     margin: 0;
+}
+
+h1, h2{
+    font-family: 'Raleway', sans-serif;
 }
 
 header {
@@ -51,7 +56,7 @@ footer {
     background-color: black;
 }
 
-div#pizzamenue{
+div#pizzamenue {
     display: flex;
     flex-wrap: wrap;
 }
