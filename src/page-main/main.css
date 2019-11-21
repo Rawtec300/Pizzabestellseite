@@ -9,33 +9,40 @@ h2 {
     margin: 0;
 }
 
-header{
+header {
     background-color: limegreen;
     color: white;
 }
 
-div#hauptbereich{
-    display: flex;
+div#grauzone{
     background-color: grey;
-    color: white;
 }
 
 nav {
     width: 20%;
+    height: 80vh;
+    float: left;
 }
 
 main {
     width: 50%;
+    height: max-content;
+    float: left;
     border-right: 1px solid white;
     border-left: 1px solid white;
 }
 
 aside {
+    float: right;
+    position: absolute;
+    right: 0;
     width: 30%;
+    height: 80vh;
 }
 
 footer {
-    background-color:black;
+    clear: both;
+    background-color: black;
     color: white;
     height: 10 vh;
 }
