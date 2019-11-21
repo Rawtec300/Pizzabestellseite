@@ -1,38 +1,49 @@
-body {
-    background-color: grey;
-    color: white;
-}
-
 h1 {
     text-align: center;
     background-color: limegreen;
+    margin: 0;
 }
 
 h2 {
     text-align: center;
     text-decoration-line: underline;
+    margin: 0;
 }
 
-div#pizzamenue input{
+
+
+div#hauptbereich{
+    display: flex;
+    background-color: grey;
+}
+
+nav {
+    width: 20%;
+    float: left;
+}
+
+main {
+    width: 50%;
+    float: left;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+aside {
+    float: left;
+    width: 30%;
+}
+
+footer {
+    background-color: blueviolet;
+    height: 10 vh;
+}
+
+div#pizzamenue input {
     width: 95%;
     border: solid #000000 2px;
 }
 
-div#pizzamenue{
-    max-width: 50%;
-}
-
 div.pizzabestellobjekt {
     float: left;
-}
-
-aside {
-    float: right;
-    max-width: 30%;
-    position: absolute;
-    right: 0;
-}
-
-fieldset{
-    border: none;
 }
