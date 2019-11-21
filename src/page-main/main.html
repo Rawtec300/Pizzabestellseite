@@ -8,11 +8,13 @@
 </head>
 
 <body>
-    <main>
+    <header>
         <h1 id="seitenanfang">PizzaUp</h1>
+    </header>
+    <main>
         <h2>Keine Lust zu kochen? Kein Problem, bestell dir einfach eine Premium-Pizza von PizzaUp!</h2>
         <!--Menü wird in Tabellenform angezeigt-->
-        <form method="get" action="#eingabeformular">
+        <form method="get" action="#anmeldeformular">
             <div id="pizzamenue">
                 <!--Pizza Margarita-->
                 <div class="pizzabestellobjekt">
@@ -195,85 +197,91 @@
                 </div>
             </div>
         </form>
-        <!--Eingabeformular-->
-        <fieldset class="eingabeformular">
-            <h2>Geben Sie bitte Ihre Persönlichen Daten ein, damit wir an Sie liefern können:</h2>
-            <form id="eingabeformular">
-                <table>
-                    <tr>
-                        <td>
-                            <label for="lname">Name:</label>
-                        </td>
-                        <td colspan="3">
-                            <input type="text" id="lname" placeholder="Nachname" required>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="lvorname">Vorname:</label>
-                        </td>
-                        <td colspan="3">
-                            <input type="text" id="lvorname" placeholder="Vorname" required>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="ltelefon">Telefon:</label>
-                        </td>
-                        <td colspan="3">
-                            <input type="tel" id="ltelefon" placeholder="Telefonnummer">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="lemail">Email:</label>
-                        </td>
-                        <td colspan="3">
-                            <input type="email" id="lemail" placeholder="Email" required>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="lpasswort">Passwort:</label>
-                        </td>
-                        <td>
-                            <input type="password" id="lpasswort" placeholder="Passwort" required>
-                        </td>
-                        <td>
-                            <label for="lpasswortwiederholen">Passwort wiederholen:</label>
-                        </td>
-                        <td>
-                            <input type="password" id="lpasswortwiederholen" placeholder="Passwort Wiederholen"
-                                required>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="lstrasse">Straße:</label>
-                        </td>
-                        <td colspan="3">
-                            <input type="text" id="lstrasse" placeholder="Adresse, Hausnummer" required>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="lstadt">Stadt:</label>
-                        </td>
-                        <td colspan="3">
-                            <input type="text" id="lstadt" placeholder="PLZ, Stadt" required>
-                        </td>
-                    </tr>
-                </table>
-                Wie möchten Sie zahlen:<br><br>
-                <input type="radio" name="zahlungsart" value="Bar" checked>Bar
-                <input type="radio" name="zahlungsart" value="Kreditkarte">Kreditkarte
-                <input type="radio" name="zahlungsart" value="Paypal">Paypal<br><br>
-                <input type="checkbox" name="Einwilligungserklärung" required>Ich habe die Datenschutzerklärung gelesen
-                und
-                akzeptiert.<br><br>
-                <input type="submit" value="Absenden">
-            </form>
-        </fieldset>
+        <aside>
+            <!--Eingabeformular-->
+            <fieldset class="eingabeformular" id="anmeldeformular">
+                <h2>Geben Sie bitte Ihre Persönlichen Daten ein, damit wir an Sie liefern können:</h2>
+                <form id="eingabeformular">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="lname">Name:</label>
+                            </td>
+                            <td colspan="3">
+                                <input type="text" id="lname" placeholder="Nachname" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="lvorname">Vorname:</label>
+                            </td>
+                            <td colspan="3">
+                                <input type="text" id="lvorname" placeholder="Vorname" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="ltelefon">Telefon:</label>
+                            </td>
+                            <td colspan="3">
+                                <input type="tel" id="ltelefon" placeholder="Telefonnummer">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="lemail">Email:</label>
+                            </td>
+                            <td colspan="3">
+                                <input type="email" id="lemail" placeholder="Email" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="lpasswort">Passwort:</label>
+                            </td>
+                            <td>
+                                <input type="password" id="lpasswort" placeholder="Passwort" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="lpasswortwiederholen">Passwort wiederholen:</label>
+                            </td>
+                            <td>
+                                <input type="password" id="lpasswortwiederholen" placeholder="Passwort Wiederholen"
+                                    required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="lstrasse">Straße:</label>
+                            </td>
+                            <td colspan="3">
+                                <input type="text" id="lstrasse" placeholder="Adresse, Hausnummer" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="lstadt">Stadt:</label>
+                            </td>
+                            <td colspan="3">
+                                <input type="text" id="lstadt" placeholder="PLZ, Stadt" required>
+                            </td>
+                        </tr>
+                    </table>
+                    Wie möchten Sie zahlen:<br><br>
+                    <input type="radio" name="zahlungsart" value="Bar" checked>Bar
+                    <input type="radio" name="zahlungsart" value="Kreditkarte">Kreditkarte
+                    <input type="radio" name="zahlungsart" value="Paypal">Paypal<br><br>
+                    <input type="checkbox" name="Einwilligungserklärung" required>Ich habe die Datenschutzerklärung
+                    gelesen
+                    und
+                    akzeptiert.<br><br>
+                    <input type="submit" value="Absenden">
+                </form>
+            </fieldset>
+        </aside>
+
     </main>
 </body>
 
