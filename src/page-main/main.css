@@ -59,9 +59,29 @@ footer {
 div#pizzamenue {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 div#pizzamenue input {
     width: 95%;
     border: solid #000000 2px;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.fieldinput{
+    width: 160%;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.fieldinput:hover{
+    background-color: yellow;
+}
+
+.absenden{
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgba(0,0,0, 0.9);
 }
