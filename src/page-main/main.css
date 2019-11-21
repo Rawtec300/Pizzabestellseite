@@ -27,11 +27,8 @@ nav {
     float: left;
 }
 
-div#grauzone nav ul li{
+div#grauzone nav a{
     color: white;
-}
-
-div#grauzone a{
     text-decoration: none;
 }
 
@@ -54,7 +51,6 @@ aside {
 footer {
     clear: both;
     background-color: black;
-    height: 10 vh;
 }
 
 div#pizzamenue input {
