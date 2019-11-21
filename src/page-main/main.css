@@ -76,6 +76,7 @@ div#pizzamenue {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    justify-content: space-evenly;
 }
 
 div#pizzamenue input {
@@ -83,16 +84,12 @@ div#pizzamenue input {
 }
 
 .jetztbestellen {
-    border: 1px solid black;
     border-radius: 5px;
     width: 90%;
+    margin-top: 1px;
     margin-right: 5%;
     margin-left: 5%;
     margin-bottom: 3px;
-}
-
-.pizzabestellobjekt {
-    border: 1px solid black;
 }
 
 .fieldinput {
