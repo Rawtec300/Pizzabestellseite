@@ -48,20 +48,21 @@ div#navigation h3 {
 .navigation a {
     color: white;
     text-decoration: none;
+    
 }
 
-.navigation {
-    margin-left: 10px;
+#navigation {
+    margin-right: 10px;
+    border-right: 1px solid white;
 }
 
 main {
     width: 55%;
-    border-right: 1px solid white;
-    border-left: 1px solid white;
 }
 
 aside {
     width: 30%;
+    border-left: 1px solid white;
 }
 
 aside h2 {
