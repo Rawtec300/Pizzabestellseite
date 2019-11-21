@@ -19,7 +19,7 @@ h2 {
     font-family: 'Raleway', sans-serif;
 }
 
-#maintitle{
+#maintitle {
     margin-top: 5px;
     margin-bottom: 10px;
 }
@@ -50,7 +50,7 @@ div#navigation h3 {
     text-decoration: none;
 }
 
-.navigation{
+.navigation {
     margin-left: 10px;
 }
 
@@ -62,6 +62,10 @@ main {
 
 aside {
     width: 30%;
+}
+
+aside h2 {
+    margin: 5px;
 }
 
 footer {
@@ -96,6 +100,7 @@ div#pizzamenue input {
     margin: 5px;
     padding: 5px;
     border: 1px solid black;
+    border-radius: 3px;
 }
 
 .fieldinput:hover {
@@ -108,6 +113,6 @@ div#pizzamenue input {
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
 }
 
-.label{
+.label {
     margin-left: 5px;
 }
