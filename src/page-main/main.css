@@ -21,13 +21,19 @@ div#grauzone{
     background-color: grey;
 }
 
-nav {
+div#navigation {
     width: 15%;
     height: 80vh;
     float: left;
 }
 
-div#grauzone nav a{
+div#navigation h3{
+    margin: 0;
+    padding: 0;
+    text-decoration:underline;
+}
+
+.navigation a{
     color: white;
     text-decoration: none;
 }
