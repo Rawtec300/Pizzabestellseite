@@ -1,7 +1,9 @@
 const basket_counter = document.querySelector('.basket-counter');
-const nav_basket_icon = document.querySelector('.shopping-basket');
+const nav_items = document.querySelectorAll('.nav-link');
+const nav_brand = document.querySelector('.navbar-brand');
+const nav_basket = document.querySelector(".shopping-basket")
 const btn_bestellen = document.querySelector('.btn-bestellen');
-const nav_icon_bg_color = nav_basket_icon.getAttribute('backgroundColor');
+const nav_icon_bg_color = nav_basket.getAttribute('backgroundColor');
 
 
 let count = 0;
@@ -17,16 +19,19 @@ function emptyBasket() {
 }
 
 function basketHover() {
-    nav_basket_icon.style.backgroundColor = 'grey';
-
+    this.style.backgroundColor = 'grey';
 }
 
 function basketHoverOut() {
-    nav_basket_icon.style.backgroundColor = nav_icon_bg_color;
+    this.style.backgroundColor = nav_icon_bg_color;
 }
 
 btn_bestellen.addEventListener('click', addItem);
-nav_basket_icon.addEventListener('click', emptyBasket);
+for (let i = 0; i < nav_items.length; i++) {
+    nav_items[i].onmouseover = basketHover;
+    nav_items[i].onmouseout = basketHoverOut;
+}
+nav_brand.onmouseover = basketHover;
+nav_brand.onmouseout = basketHoverOut;
 
-nav_basket_icon.onmouseover = basketHover;
-nav_basket_icon.onmouseout = basketHoverOut;
+nav_basket.addEventListener('click', emptyBasket);
