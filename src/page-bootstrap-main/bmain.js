@@ -51,7 +51,7 @@ nav_brand.onmouseout = navItemHoverOut;
 //Checks if the passwords are the same
 form.onsubmit = function(e) {
     if (password.value !== password_repeat.value) {
-        console.log('Die Passwörter sind unterschiedlich!');
+        console.error('Die Passwörter sind unterschiedlich!');
         e.preventDefault();
         form_error_message.textContent = 'Die Passwörter müssen identisch sein!';
     }else{
