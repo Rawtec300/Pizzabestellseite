@@ -4,278 +4,317 @@
 <head>
     <title>PizzaUp</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="main.css">-->
+
+    <!-- Bootstrap CSS -->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+    <!--Body Font-->
+    <!--font-family: 'PT Sans', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <!--h1 und h2 Font-->
+    <!--font-family: 'Raleway', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <main>
+    <header>
         <h1 id="seitenanfang">PizzaUp</h1>
-        <h2>Keine Lust zu kochen? Kein Problem, bestell dir einfach eine Premium-Pizza von PizzaUp!</h2>
-        <!--Menü wird in Tabellenform angezeigt-->
-        <form method="get" action="#eingabeformular">
-            <table>
-                <!--Erste Zeile-->
-                <tr>
-                    <td>
-                        <!--Pizza Margarita-->
-                        <figure>
-                            <img src="../Pizzafotos/Margarita1.jpg" alt="Margarita Pizza" height="200" width="200">
+    </header>
+    <div id="grauzone">
+        <div id="navigation">
+            <h3>Menü</h3><br>
+            <nav class="navigation">
+                <a href="#">Kontakt</a><br>
+                <a href="#">Datenschutzerklärung</a>
+            </nav>
+        </div>
+        <main>
+            <h2 id="maintitle">Keine Lust zu kochen? Kein Problem, bestell dir einfach eine Premium-Pizza von PizzaUp!
+            </h2>
+            <!--Menü wird in Tabellenform angezeigt-->
+            <form method="get" action="#anmeldeformular">
+                <div id="pizzamenue">
+                    <!--Pizza Margarita-->
+                    <div class="pizzabestellobjekt">
+                        <figure id="figmargarita">
+                            <img src="../Pizzafotos/Margherita1.jpg" alt="Margarita Pizza" height="200" width="200">
                             <figcaption>
                                 Pizza Margarita<br>
-                                Klein: 5,50€&emsp;Groß: 7,00€<br>
-                                <input type="submit" title="Bestellen" value="Jetzt bestellen">
+                                Klein: 5,50€&emsp;Groß: 7,00€
                             </figcaption>
                         </figure>
-                    </td>
-                    <td>
-                        <!--Pizza Pepperoni-->
-                        <figure>
+                        <input type="submit" class="jetztbestellen" title="Bestellen" value="Jetzt bestellen">
+                    </div>
+                    <!--Pizza Pepperoni-->
+                    <div class="pizzabestellobjekt">
+                        <figure id="figpepperoni">
                             <img src="../Pizzafotos/Pepperoni1.jpg" alt="Pepperoni Salami Pizza" height="200"
                                 width="200">
                             <figcaption>
                                 Pizza Pepperoni<br>
                                 Klein: 5,50€&emsp;Groß: 7,00€
-                                <input type="submit" title="Bestellen" value="Jetzt bestellen">
                             </figcaption>
                         </figure>
-                    </td>
-                    <td>
-                        <!--Pizza Tonno-->
-                        <figure>
+                        <input type="submit" class="jetztbestellen" title="Bestellen" value="Jetzt bestellen">
+                    </div>
+                    <!--Pizza Tonno-->
+                    <div class="pizzabestellobjekt">
+                        <figure id="figtonno">
                             <img src="../Pizzafotos/tonno.png" alt="Tunfisch mit Zwiebeln Pizza" height="200"
                                 width="200">
                             <figcaption>
                                 Pizza Tonno<br>
                                 Klein: 5,50€&emsp;Groß: 7,00€
-                                <input type="submit" title="Bestellen" value="Jetzt bestellen">
                             </figcaption>
                         </figure>
-                    </td>
-                    <td>
-                        <!--Pizza Supreme-->
-                        <figure>
+                        <input type="submit" title="Bestellen" class="jetztbestellen" value="Jetzt bestellen">
+                    </div>
+                    <div class="pizzabestellobjekt">
+                        <figure id="figschinken">
+                            <img src="../Pizzafotos/schinken1.jpg" alt="Schinken Pizza" height="200" width="200">
+                            <figcaption>
+                                Pizza Schinken<br>
+                                Klein: 5,50€&emsp;Groß: 7,00€
+                            </figcaption>
+                        </figure>
+                        <input type="submit" class="jetztbestellen" title="Bestellen" value="Jetzt bestellen">
+                    </div>
+                    <!--Pizza Supreme-->
+                    <div class="pizzabestellobjekt">
+                        <figure id="figsupreme">
                             <img src="../Pizzafotos/Supreme1.jpg" alt="Pizza Supreme" height="200" width="200">
                             <figcaption>
                                 Pizza Supreme<br>
                                 Klein: 6,00€&emsp;Groß: 7,50€
-                                <input type="submit" title="Bestellen" value="Jetzt bestellen">
                             </figcaption>
                         </figure>
-                    </td>
-                    <td>
-                        <!--Pizza Vietnam-->
-                        <figure>
+                        <input type="submit" class="jetztbestellen" title="Bestellen" value="Jetzt bestellen">
+                    </div>
+                    <!--Pizza Vietnam-->
+                    <div class="pizzabestellobjekt">
+                        <figure id="figvietnam">
                             <img src="../Pizzafotos/Vietnam1.jpg" alt="Pizza Vietnam" height="200" width="200">
                             <figcaption>
                                 Pizza Vietnam<br>
                                 Klein: 6,00€&emsp;Groß: 7,50€
-                                <input type="submit" title="Bestellen" value="Jetzt bestellen">
                             </figcaption>
                         </figure>
-                    </td>
-                </tr>
-                <!--Zweite Zeile-->
-                <tr>
-                    <td>
-                        <!--Pizza Cauli-Fredo-->
-                        <figure>
+                        <input type="submit" class="jetztbestellen" title="Bestellen" value="Jetzt bestellen">
+                    </div>
+                    <!--Pizza Cauli-Fredo-->
+                    <div class="pizzabestellobjekt">
+                        <figure id="figcaulifredo">
                             <img src="../Pizzafotos/Cauli-Fredo1.jpg" alt="Cauli-Fredo Wurst Pizza" height="200"
                                 width="200">
                             <figcaption>
                                 Pizza Cauli-Fredo<br>
                                 Klein: 6,00€&emsp;Groß: 7,50€
-                                <input type="submit" title="Bestellen" value="Jetzt bestellen">
                             </figcaption>
                         </figure>
-                    </td>
-                    <td>
-                        <!--Pizza Vegitarisch-->
-                        <figure>
+                        <input type="submit" class="jetztbestellen" title="Bestellen" value="Jetzt bestellen">
+                    </div>
+                    <!--Pizza Vegitarisch-->
+                    <div class="pizzabestellobjekt">
+                        <figure id="figvegetarisch">
                             <img src="../Pizzafotos/Vegitarisch1.jpg" alt="Vegitarische Pizza" height="200" width="200">
                             <figcaption>
                                 Pizza Vegitarisch<br>
                                 Klein: 5,50€&emsp;Groß: 7,00€
-                                <input type="submit" title="Bestellen" value="Jetzt bestellen">
                             </figcaption>
                         </figure>
-                    </td>
-                    <td>
-                        <!--Pizza Mexiko-->
-                        <figure>
+                        <input type="submit" class="jetztbestellen" title="Bestellen" value="Jetzt bestellen">
+                    </div>
+                    <!--Pizza Mexiko-->
+                    <div class="pizzabestellobjekt">
+                        <figure id="figmexiko">
                             <img src="../Pizzafotos/Mexiko1.jpg" alt="Mexikanische Pizza mit Hähnchen" height="200"
                                 width="200">
                             <figcaption>
                                 Pizza Mexiko<br>
                                 Klein: 6,50€&emsp;Groß: 7,50€
-                                <input type="submit" title="Bestellen" value="Jetzt bestellen">
                             </figcaption>
                         </figure>
-                    </td>
-                    <td>
-                        <!--Pizza Deep Disch Pepperoni-->
-                        <figure>
+                        <input type="submit" class="jetztbestellen" title="Bestellen" value="Jetzt bestellen">
+                    </div>
+                    <!--Pizza Deep Disch Pepperoni-->
+                    <div class="pizzabestellobjekt">
+                        <figure id="figdeeppepperoni">
                             <img src="../Pizzafotos/DeepPepperoni.jpg" alt="Deep Dish Pepperoni Pizza" height="200"
                                 width="200">
                             <figcaption>
                                 Pizza Deep Dish Pepperoni<br>
                                 Klein: 6,50€&emsp;Groß: 7,50€
-                                <input type="submit" title="Bestellen" value="Jetzt bestellen">
                             </figcaption>
                         </figure>
-                    </td>
-                    <td>
-                        <!--Pizza Chicken Fajita-->
-                        <figure>
+                        <input type="submit" class="jetztbestellen" title="Bestellen" value="Jetzt bestellen">
+                    </div>
+                    <!--Pizza Chicken Fajita-->
+                    <div class="pizzabestellobjekt">
+                        <figure id="figchickenfajita">
                             <img src="../Pizzafotos/Fajita1.jpg" alt="Chicken Fajita Pizza" height="200" width="200">
                             <figcaption>
                                 Pizza Chicken Fajita<br>
                                 Klein: 6,50€&emsp;Groß: 7,50€
-                                <input type="submit" title="Bestellen" value="Jetzt bestellen">
                             </figcaption>
                         </figure>
-                    </td>
-                </tr>
-                <!--Dritte Zeile-->
-                <tr>
-                    <td>
-                        <!--Pizza Taco-->
-                        <figure>
+                        <input type="submit" class="jetztbestellen" title="Bestellen" value="Jetzt bestellen">
+                    </div>
+                    <!--Pizza Taco-->
+                    <div class="pizzabestellobjekt">
+                        <figure id="figtaco">
                             <img src="../Pizzafotos/Taco1.jpg" alt="Taco Pizza" height="200" width="200">
                             <figcaption>
                                 Pizza Taco<br>
                                 Klein: 6,00€&emsp;Groß: 7,00€
-                                <input type="submit" title="Bestellen" value="Jetzt bestellen">
                             </figcaption>
                         </figure>
-                    </td>
-                    <td>
-                        <!--Pizza White Classic-->
-                        <figure>
+                        <input type="submit" class="jetztbestellen" title="Bestellen" value="Jetzt bestellen">
+                    </div>
+                    <!--Pizza White Classic-->
+                    <div class="pizzabestellobjekt">
+                        <figure id="figwhite">
                             <img src="../Pizzafotos/white.jpg" alt="White Pizza Classic" height="200" width="200">
                             <figcaption>
                                 Pizza White Classic<br>
                                 Klein: 6,00€&emsp;Groß: 7,00€
-                                <input type="submit" title="Bestellen" value="Jetzt bestellen">
                             </figcaption>
                         </figure>
-                    </td>
-                    <td>
-                        <!--Pizza Pasta-->
-                        <figure>
+                        <input type="submit" class="jetztbestellen" title="Bestellen" value="Jetzt bestellen">
+                    </div>
+                    <!--Pizza Pasta-->
+                    <div class="pizzabestellobjekt">
+                        <figure id="figpasta">
                             <img src="../Pizzafotos/Pasta1.jpg" alt="Pasta Pizza" height="200" width="200">
                             <figcaption>
                                 Pizza Pasta<br>
                                 Klein: 6,40€&emsp;Groß: 7,40€
-                                <input type="submit" title="Bestellen" value="Jetzt bestellen">
                             </figcaption>
                         </figure>
-                    </td>
-                    <td>
-                        <!--Pizza Buffalo Chicken-->
-                        <figure>
+                        <input type="submit" class="jetztbestellen" title="Bestellen" value="Jetzt bestellen">
+                    </div>
+                    <!--Pizza Buffalo Chicken-->
+                    <div class="pizzabestellobjekt">
+                        <figure id="figbuffalochicken">
                             <img src="../Pizzafotos/BuffaloChicken1.jpg" alt="Buffalo Chicken Pizza" height="200"
                                 width="200">
                             <figcaption>
                                 Pizza Pasta<br>
                                 Klein: 6,80€&emsp;Groß: 7,80€
-                                <input type="submit" title="Bestellen" value="Jetzt bestellen">
                             </figcaption>
                         </figure>
-                    </td>
-                    <td>
-                        <!--Pizza Pulled Pork-->
-                        <figure>
+                        <input type="submit" class="jetztbestellen" title="Bestellen" value="Jetzt bestellen">
+                    </div>
+                    <!--Pizza Pulled Pork-->
+                    <div class="pizzabestellobjekt">
+                        <figure id="figpulledpork">
                             <img src="../Pizzafotos/PulledPork1.jpg" alt="Pulled Pork Pizza" height="200" width="200">
                             <figcaption>
                                 Pizza Pasta<br>
                                 Klein: 7,00€&emsp;Groß: 9,00€
-                                <input type="submit" title="Bestellen" value="Jetzt bestellen">
                             </figcaption>
                         </figure>
-                    </td>
-                </tr>
-            </table>
-        </form>
-        <!--Eingabeformular-->
-        <fieldset>
-            <h2>Geben Sie bitte Ihre Persönlichen Daten ein, damit wir an Sie liefern können:</h2>
-            <form id="eingabeformular">
+                        <input type="submit" class="jetztbestellen" title="Bestellen" value="Jetzt bestellen">
+                    </div>
+                </div>
+            </form>
+        </main>
+        <aside>
+            <!--Eingabeformular-->
+            <h2 id="anmeldeformular">Geben Sie bitte Ihre Persönlichen Daten ein, damit wir an Sie liefern können:</h2>
+            <form>
                 <table>
                     <tr>
                         <td>
-                            <label for="lname">Name:</label>
+                            <label for="lname" class="label">Name:</label>
                         </td>
-                        <td colspan="3">
-                            <input type="text" id="lname" placeholder="Nachname" required>
+                        <td>
+                            <input type="text" class="fieldinput" id="lname" placeholder="Nachname" required>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="lvorname">Vorname:</label>
+                            <label for="lvorname" class="label">Vorname:</label>
                         </td>
-                        <td colspan="3">
-                            <input type="text" id="lvorname" placeholder="Vorname" required>
+                        <td>
+                            <input type="text" class="fieldinput" id="lvorname" placeholder="Vorname" required>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="ltelefon">Telefon:</label>
+                            <label for="ltelefon" class="label">Telefon:</label>
                         </td>
-                        <td colspan="3">
-                            <input type="tel" id="ltelefon" placeholder="Telefonnummer">
+                        <td>
+                            <input type="tel" class="fieldinput" id="ltelefon" placeholder="Telefonnummer">
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="lemail">Email:</label>
+                            <label for="lemail" class="label">Email:</label>
                         </td>
-                        <td colspan="3">
-                            <input type="email" id="lemail" placeholder="Email" required>
+                        <td>
+                            <input type="email" class="fieldinput" id="lemail" placeholder="Email" required>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="lpasswort">Passwort:</label>
+                            <label for="lpasswort" class="label">Passwort:</label>
                         </td>
                         <td>
-                            <input type="password" id="lpasswort" placeholder="Passwort" required>
+                            <input type="password" class="fieldinput" id="lpasswort" placeholder="Passwort" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="lpasswortwiederholen" class="label">Passwort wiederholen:</label>
                         </td>
                         <td>
-                            <label for="lpasswortwiederholen">passwort wiederholen:</label>
+                            <input type="password" class="fieldinput" id="lpasswortwiederholen"
+                                placeholder="Passwort Wiederholen" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="lstrasse" class="label">Straße:</label>
                         </td>
                         <td>
-                            <input type="password" id="lpasswortwiederholen" placeholder="Passwort Wiederholen"
+                            <input type="text" class="fieldinput" id="lstrasse" placeholder="Adresse, Hausnummer"
                                 required>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="lstrasse">Straße:</label>
+                            <label for="lstadt" class="label">Stadt:</label>
                         </td>
-                        <td colspan="3">
-                            <input type="text" id="lstrasse" placeholder="Adresse, Hausnummer" required>
-                        </td>
-                    </tr>
-                    <tr>
                         <td>
-                            <label for="lstadt">Stadt:</label>
-                        </td>
-                        <td colspan="3">
-                            <input type="text" id="lstadt" placeholder="PLZ, Stadt" required>
+                            <input type="text" class="fieldinput" id="lstadt" placeholder="PLZ, Stadt" required>
                         </td>
                     </tr>
                 </table>
-                Wie möchten Sie zahlen:<br><br>
-                <input type="radio" name="zahlungsart" value="Bar" checked>Bar
-                <input type="radio" name="zahlungsart" value="Kreditkarte">Kreditkarte
-                <input type="radio" name="zahlungsart" value="Paypal">Paypal<br><br>
-                <input type="checkbox" name="Einwilligungserklärung" required>Ich habe die Datenschutzerklärung gelesen
-                und
-                akzeptiert.<br><br>
-                <input type="submit" value="Absenden">
+                <div class="label">
+                    Wie möchten Sie zahlen:<br><br>
+                    <input type="radio" name="zahlungsart" value="Bar" checked>Bar
+                    <input type="radio" name="zahlungsart" value="Kreditkarte">Kreditkarte
+                    <input type="radio" name="zahlungsart" value="Paypal">Paypal<br><br>
+                    <input type="checkbox" name="Einwilligungserklärung" required>Ich habe die Datenschutzerklärung
+                    gelesen
+                    und
+                    akzeptiert.<br><br>
+                    <div class="button">
+                        <input type="submit" class="absenden" value="Absenden" style="margin-left : 20px;">
+                    </div>
+                </div>
             </form>
-        </fieldset>
-    </main>
+        </aside>
+    </div>
+    <footer>
+        <h2>Copyright Noah Colby 2019, Alle Rechte vorbehalten</h2>
+    </footer>
+    <!--JavaScript für Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
 </body>
 
 </html>
